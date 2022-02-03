@@ -26,18 +26,18 @@
     },
     "MINTER_ADDRESS": {
       "description": "The address where the Kitty Items contract for your app is deployed.",
-      "value": ""
+      "value": "0xb70fbb1b449634a7"
     },
     "MINTER_PRIVATE_KEY": {
       "description": "The the private key for the account where the Kitty Items contract for your app is deployed.",
-      "value": ""
+      "value": "0xb70fbb1b449634a7"
     },
     "MINTER_ACCOUNT_KEY_INDEX": {
       "description": "Which keypair from the minter account to use for transaction signing & verifying.", 
        "value": "0"
     },
     "IS_HEROKU": {
-      "value": true
+      "value": false
     },
     "BLOCK_WINDOW": {
       "description": "Look for events n blocks at a time.",
@@ -73,11 +73,11 @@
     },
     "NEXT_PUBLIC_CONTRACT_KITTY_ITEMS": {
       "description": "The address where the KittyItems contract is deployed on testnet for this app.",
-      "value": ""
+      "value": "0xb70fbb1b449634a7"
     },
     "NEXT_PUBLIC_CONTRACT_NFT_STOREFRONT": {
       "description": "The address where the KittyItemsMarket contract is deployed on testnet for this app.",
-      "value": ""
+      "value": "0xb70fbb1b449634a7"
     },
     "NEXT_PUBLIC_CONTRACT_NON_FUNGIBLE_TOKEN": {
       "description": "The address for the standard Non-Fungible Token (NFT) contract on testnet.",
@@ -89,7 +89,7 @@
     },
     "NEXT_PUBLIC_FLOW_ADDRESS": {
       "description": "The address of the admin account. (Same address where Storefront contract is deployed).",
-      "value":""
+      "value":"0xb70fbb1b449634a7"
     },
     "NEXT_PUBLIC_FLOW_ACCESS_API_URL": {
       "description": "URL for accessing the Flow tesntet gRPC API. (Used by @onflow/fcl)",

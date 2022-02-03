@@ -11,6 +11,8 @@ a different kind of metadata, such as a creator biography
 or a JPEG image file.
 */
 
+
+
 pub contract MetadataViews {
 
     // A Resolver provides access to a set of metadata views.

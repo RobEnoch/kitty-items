@@ -12,11 +12,11 @@
     "port": 8701
   },
   "contracts": {
-    "KittyItems": "./cadence/contracts/KittyItems.cdc",
+    "Roomz": "./cadence/contracts/Roomz.cdc",
     "NFTStorefront": {
       "source": "./cadence/contracts/NFTStorefront.cdc",
       "aliases": {
-        "testnet": "0x94b06cfca1d8a476"
+        "testnet": "0xb70fbb1b449634a7"
       }
     },
     "NonFungibleToken": {
@@ -60,7 +60,7 @@
   "deployments": {
     "emulator": {
       "emulator-account": [
-        "KittyItems",
+        "Roomz",
         "NFTStorefront",
         "NonFungibleToken",
         "MetadataViews"

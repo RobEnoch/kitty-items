@@ -1,14 +1,15 @@
 {
   "accounts": {
     "testnet-account": {
-      "address": "${FLOW_ADDRESS}",
-      "keys": "${FLOW_PRIVATE_KEY}"
+      "address": "0xec0478f641e9798e",
+      "keys": "9a567f47173bb545ca946d8cb7c6612140d19e9a3790649d5a1f16a458e2674e"
     }
   },
   "deployments": {
     "testnet": {
       "testnet-account": [
-        "KittyItems"
+        "Roomz"
+        
       ]
     }
   }

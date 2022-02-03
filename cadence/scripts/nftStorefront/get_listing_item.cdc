@@ -1,7 +1,7 @@
 import NonFungibleToken from "../../contracts/NonFungibleToken.cdc"
 import MetadataViews from "../../contracts/MetadataViews.cdc"
 import NFTStorefront from "../../contracts/NFTStorefront.cdc"
-import KittyItems from "../../contracts/KittyItems.cdc"
+import Roomz from "../../contracts/Roomz.cdc"
 
 pub struct ListingItem {
     pub let name: String
@@ -10,8 +10,8 @@ pub struct ListingItem {
 
     pub let itemID: UInt64
     pub let resourceID: UInt64
-    pub let kind: KittyItems.Kind
-    pub let rarity: KittyItems.Rarity
+    pub let kind: Roomz.Kind
+    pub let rarity: Roomz.Rarity
     pub let owner: Address
     pub let price: UFix64
 
@@ -21,8 +21,8 @@ pub struct ListingItem {
         thumbnail: String,
         itemID: UInt64,
         resourceID: UInt64,
-        kind: KittyItems.Kind,
-        rarity: KittyItems.Rarity,
+        kind: Roomz.Kind,
+        rarity: Roomz.Rarity,
         owner: Address,
         price: UFix64
     ) {
@@ -63,7 +63,7 @@ pub fun main(address: Address, listingResourceID: UInt64): ListingItem? {
             let itemID = details.nftID
             let itemPrice = details.salePrice
         
-            if let collection = getAccount(address).getCapability<&KittyItems.Collection{NonFungibleToken.CollectionPublic, KittyItems.KittyItemsCollectionPublic}>(KittyItems.CollectionPublicPath).borrow() {
+            if let collection = getAccount(address).getCapability<&Roomz.Collection{NonFungibleToken.CollectionPublic, Roomz.RoomzCollectionPublic}>(Roomz.CollectionPublicPath).borrow() {
             
                 if let item = collection.borrowKittyItem(id: itemID) {
 

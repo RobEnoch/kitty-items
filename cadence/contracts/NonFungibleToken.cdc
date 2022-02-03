@@ -44,6 +44,8 @@ Collection to complete the transfer.
 // The main NFT contract interface. Other NFT contracts will
 // import and implement this interface
 //
+
+
 pub contract interface NonFungibleToken {
 
     // The total number of tokens of this type in existence
@@ -96,7 +98,7 @@ pub contract interface NonFungibleToken {
 
         // deposit takes an NFT as an argument and adds it to the Collection
         //
-		pub fun deposit(token: @NFT)
+        pub fun deposit(token: @NFT)
     }
 
     // Interface that an account would commonly 
